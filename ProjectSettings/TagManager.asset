@@ -9,6 +9,7 @@ TagManager:
   - DragDropUI
   - crashUI
   - GameManager
+  - Obstacle
   layers:
   - Default
   - TransparentFX

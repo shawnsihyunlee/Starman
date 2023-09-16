@@ -774,7 +774,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabToSpawn: {fileID: 7453054971018500201, guid: c2b7e69218c4fbd469663c5a53125c04, type: 3}
   imageToClone: {fileID: 572033799}
-  numberOfPlanets: 2
+  numberOfPlanets: 3
 --- !u!114 &572033802
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2108,7 +2108,8 @@ MonoBehaviour:
   startPauseButtonText: {fileID: 1555516271}
   crashText: {fileID: 1713484645}
   stageClearedText: {fileID: 1717989530}
-  currLevel: 2
+  currLevel: 5
+  pickedUpSpaceman: 0
 --- !u!4 &1428631546
 Transform:
   m_ObjectHideFlags: 0
@@ -3084,6 +3085,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2046797075}
   m_CullTransparentMesh: 1
+--- !u!1001 &895561804537046695
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3323197118019610321, guid: e24bc58ef7a7c97479dae44c8c6371af, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3323197118019610321, guid: e24bc58ef7a7c97479dae44c8c6371af, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3323197118019610321, guid: e24bc58ef7a7c97479dae44c8c6371af, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3323197118019610321, guid: e24bc58ef7a7c97479dae44c8c6371af, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3323197118019610321, guid: e24bc58ef7a7c97479dae44c8c6371af, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3323197118019610321, guid: e24bc58ef7a7c97479dae44c8c6371af, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3323197118019610321, guid: e24bc58ef7a7c97479dae44c8c6371af, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3323197118019610321, guid: e24bc58ef7a7c97479dae44c8c6371af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3323197118019610321, guid: e24bc58ef7a7c97479dae44c8c6371af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3323197118019610321, guid: e24bc58ef7a7c97479dae44c8c6371af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6470411008492395382, guid: e24bc58ef7a7c97479dae44c8c6371af, type: 3}
+      propertyPath: m_Name
+      value: Spaceman
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e24bc58ef7a7c97479dae44c8c6371af, type: 3}
 --- !u!1001 &4183708521767529861
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3098,11 +3156,11 @@ PrefabInstance:
       objectReference: {fileID: 3203663207457682856, guid: 274549a4dfe816d4ea5914c3633151fd, type: 3}
     - target: {fileID: 277640850957338359, guid: 81642bdc644eed04a8b3c80c71a7a8a6, type: 3}
       propertyPath: initialVelocity.x
-      value: 0
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 277640850957338359, guid: 81642bdc644eed04a8b3c80c71a7a8a6, type: 3}
       propertyPath: initialVelocity.y
-      value: 7
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2303877723296601258, guid: 81642bdc644eed04a8b3c80c71a7a8a6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3168,3 +3226,4 @@ SceneRoots:
   - {fileID: 1127093707}
   - {fileID: 1428631546}
   - {fileID: 286109863}
+  - {fileID: 895561804537046695}
