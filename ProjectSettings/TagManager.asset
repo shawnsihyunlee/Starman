@@ -7,6 +7,8 @@ TagManager:
   - winText
   - Planet
   - DragDropUI
+  - crashUI
+  - GameManager
   layers:
   - Default
   - TransparentFX
