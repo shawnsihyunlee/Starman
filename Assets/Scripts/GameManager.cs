@@ -10,7 +10,8 @@ public class GameManager : MonoBehaviour
     public bool isGameRunning = false;
     public TMP_Text startPauseButtonText;  // Drag your button's Text component here in the inspector
     public Text crashText;
-    public Text stageClearedText;
+    public GameObject stageClearedText;
+    public int currLevel;
 
     void Start()
     {
@@ -18,8 +19,8 @@ public class GameManager : MonoBehaviour
         UpdateStartPauseButtonText();
         crashText = GameObject.FindWithTag("crashUI").GetComponent<Text>();
         crashText.gameObject.SetActive(false); // Hide the text at the start of the level
-        stageClearedText = GameObject.FindWithTag("winText").GetComponent<Text>();
-        stageClearedText.gameObject.SetActive(false); // Hide the text at the start of the level
+        stageClearedText = GameObject.FindWithTag("winText");
+        stageClearedText.SetActive(false); // Hide the text at the start of the level
 
     }
 
@@ -44,7 +45,7 @@ public class GameManager : MonoBehaviour
 
     public void clear(){
         isGameRunning = false;
-        stageClearedText.gameObject.SetActive(true);
+        stageClearedText.SetActive(true);
     }
 
     public void ToggleStartPause()
@@ -71,6 +72,11 @@ public class GameManager : MonoBehaviour
         // Logic to reset the game (e.g., reset the positions of the spaceship and other objects)
         SceneManager.LoadScene("Main Menu");  // Reloads the current scene
         crashText.gameObject.SetActive(false);
-        stageClearedText.gameObject.SetActive(false);
+        stageClearedText.SetActive(false);
+    }
+
+    public void NextLevel(){
+        
+        SceneManager.LoadScene("Level" + (currLevel+1).ToString());
     }
 }
