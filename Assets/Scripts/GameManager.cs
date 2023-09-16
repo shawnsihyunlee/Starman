@@ -65,4 +65,12 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);  // Reloads the current scene
         crashText.gameObject.SetActive(false);
     }
+
+    public void GoToMainMenu(){
+        isGameRunning = false;
+        // Logic to reset the game (e.g., reset the positions of the spaceship and other objects)
+        SceneManager.LoadScene("Main Menu");  // Reloads the current scene
+        crashText.gameObject.SetActive(false);
+        stageClearedText.gameObject.SetActive(false);
+    }
 }
