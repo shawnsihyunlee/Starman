@@ -2108,7 +2108,8 @@ MonoBehaviour:
   startPauseButtonText: {fileID: 1555516271}
   crashText: {fileID: 1713484645}
   stageClearedText: {fileID: 1717989530}
-  currLevel: 1
+  currLevel: 7
+  pickedUpSpaceman: 1
 --- !u!4 &1428631546
 Transform:
   m_ObjectHideFlags: 0
