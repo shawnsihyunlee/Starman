@@ -9,4 +9,15 @@ public class LevelLoader : MonoBehaviour
     {
         SceneManager.LoadScene("Level1");
     }
+
+    public void LoadSettingsScene()
+    {
+        SceneManager.LoadScene("Settings");
+    }
+
+    public void LoadMainMenuScene()
+    {
+        SceneManager.LoadScene("Main Menu");
+    }
+
 }

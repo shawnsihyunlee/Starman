@@ -1011,7 +1011,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1065732302}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 13ba21572a7974014a2414203655f6b6, type: 3}
+  m_Script: {fileID: 11500000, guid: cc9c7c751c318481a93113af546c0816, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1234240911
@@ -1495,7 +1495,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2007529155}
-        m_TargetAssemblyTypeName: SettingsLoader, Assembly-CSharp
+        m_TargetAssemblyTypeName: LevelLoader, Assembly-CSharp
         m_MethodName: LoadSettingsScene
         m_Mode: 1
         m_Arguments:
@@ -1553,7 +1553,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2007529150}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec068710ca1fd42d5874afb8e9c03b0a, type: 3}
+  m_Script: {fileID: 11500000, guid: cc9c7c751c318481a93113af546c0816, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &2109351018
