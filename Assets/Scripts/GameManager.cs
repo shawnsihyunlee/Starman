@@ -20,7 +20,6 @@ public class GameManager : MonoBehaviour
         crashText.gameObject.SetActive(false); // Hide the text at the start of the level
         stageClearedText = GameObject.FindWithTag("winText").GetComponent<Text>();
         stageClearedText.gameObject.SetActive(false); // Hide the text at the start of the level
-        
 
     }
 
