@@ -47,4 +47,11 @@ public class playerScript : MonoBehaviour
                 arrowInstance.SetActive(false);
         }
     }
+
+    void OnCollisionEnter2D(Collision2D other){
+        if(other.gameObject.CompareTag("Obstacle")) // If the colliding object has the tag "Player"
+        {
+            gameManager.crash();
+        }
+    }
 }

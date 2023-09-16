@@ -12,7 +12,8 @@ public class GameManager : MonoBehaviour
     public Text crashText;
     public GameObject stageClearedText;
     public int currLevel;
-
+    public bool pickedUpSpaceman = true;
+    // True by default, spaceman levels should set this to false.
     void Start()
     {
         Time.timeScale = 0;
@@ -24,7 +25,9 @@ public class GameManager : MonoBehaviour
 
     }
 
-
+    public void PickUpSpaceman(){
+        pickedUpSpaceman = true;
+    }
 
     void Update(){
         if (isGameRunning)
@@ -44,6 +47,9 @@ public class GameManager : MonoBehaviour
     }
 
     public void clear(){
+        if (!pickedUpSpaceman){
+            return;
+        }
         isGameRunning = false;
         stageClearedText.SetActive(true);
     }
@@ -60,7 +66,7 @@ public class GameManager : MonoBehaviour
     }
 
     public void ResetGame()
-    {
+    {  
         isGameRunning = false;
         // Logic to reset the game (e.g., reset the positions of the spaceship and other objects)
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);  // Reloads the current scene
